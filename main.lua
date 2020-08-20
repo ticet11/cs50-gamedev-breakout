@@ -63,10 +63,11 @@ function love.load()
     -- to show only part of a texture and not the entire thing
     gFrames = {
         ['arrows'] = GenerateQuads(gTextures['arrows'], 24, 24),
-        ['paddles'] = GenerateQuadsPaddles(gTextures['main']),
         ['balls'] = GenerateQuadsBalls(gTextures['main']),
         ['bricks'] = GenerateQuadsBricks(gTextures['main']),
-        ['hearts'] = GenerateQuads(gTextures['hearts'], 10, 9)
+        ['hearts'] = GenerateQuads(gTextures['hearts'], 10, 9),
+        ['paddles'] = GenerateQuadsPaddles(gTextures['main']),
+        ['powerups'] = GenerateQuads(gTextures['main'])
     }
     
     -- initialize our virtual resolution, which will be rendered within our
